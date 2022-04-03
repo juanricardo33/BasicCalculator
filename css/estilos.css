@@ -1,0 +1,254 @@
+/*Declaracion de variablesPersonalizadas*/
+:root{
+    /*Colores Fondo*/
+    --back-color: #3b4664;
+    /*Colores seccion titulo*/
+    --textTitles-color: #ffffff;
+    --selectBoton-color: #cc3f2e;
+    --backBotonSelect-color: #252D44;
+    /*Colores Seccion Display*/
+    --backDisplay-color: #181f32;
+    --textDisplay-color: #ffffff;
+    /*Colores teclado*/
+    --keyBoardBack-color: #252d44;
+    --backBotonKey-color: #EAE3DB;
+    --textBoton-color: #4D5362;
+    --shadowKey-color: #b5a499;
+    /*Colores teclas especiales*/
+    /*Tecla DEL RESET*/
+    --delResKeyBack-color:#64719b;
+    --delResKeyText-color: #fff;
+    --delResKeyShadow-color: #424E75;
+    /*Tecla IGUAL*/
+    --igualKeyBack-color:#D13F30;
+    --igualKeyText-color: #FFFFFF;
+    --igualKeyShadow-color: #8F2316;
+}
+/*ESTILOS GENERALES*/
+html, body {
+    height: 100%;
+}
+/*Modificar el modelo de cajas de CSS*/
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+/*resetear margenes y padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    /*width: 70%;*/
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*ESTILOS DE LOS CONTENIDOS*/
+body{
+    background-color: var(--back-color);
+}
+#contenedorPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+#contenedorTitulo{
+    display: flex;
+    justify-content: space-between;
+    color: var(--textTitles-color);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    min-width: 540px;
+    margin-top: 100px;
+}
+#contenedorSelector{
+    display: flex;
+    flex-direction: row;
+}
+#contenedorTheme{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#contenedorTheme p{
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+#tituloTheme{
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/*inicio Estilos selector Skin */
+#selectorFormulario{
+    display: flex;
+}
+.selectorSkin{
+    font-size: 10px;
+    margin: 0 5px 0 5px;
+}
+#backForm{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--backBotonSelect-color);
+    border-radius: 30px;
+    min-width: 50px;
+    margin-top: 4px;
+}
+.formulario2 label {
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 50%;
+    position: relative;
+    min-height: 10px;
+    min-width: 10px;
+    text-align: center;
+    transition: all 0.1s ease;
+    margin: 4px 0 4px 0;
+}
+.formulario2 input[name="botonSkin"] {
+    display: none;
+}
+.formulario2 input[name="botonSkin"]:checked + label:before {
+    display: none;
+}
+.formulario2 input[name="botonSkin"]:checked + label {
+    background:  var(--selectBoton-color);
+    border-radius:50%;
+}
+/*fin Selector estilos selector Skin*/
+
+#contenedorDisplay{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    min-width: 540px;
+    min-height: 126px;
+    margin-top: 28px;
+    background-color: var(--backDisplay-color);
+    border-radius: 12px;
+}
+#resultado{
+    color: var(--textDisplay-color);
+    margin-right: 35px;
+    font-weight: 700;
+    font-size: 50px;
+}
+#botonesAll{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    min-width: 540px;
+    min-height: 480px;
+    background-color: var(--keyBoardBack-color);
+    border-radius: 12px;
+}
+.contenedorBotones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    min-width: 90%;
+}
+.btn{
+    font-family: 'Spartan', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--textBoton-color);
+    min-height: 65px;
+    min-width: 100px;
+    border-radius: 12px;
+    box-shadow: 0px 3px var(--shadowKey-color);
+    background-color: var(--backBotonKey-color);
+    border: none;
+}
+.btnLarge{
+    min-width: 230px;
+}
+input[value="RESET"], input[value="DEL"]{
+    color: var(--delResKeyText-color);;
+    font-size: 18px;
+    background-color: var(--delResKeyBack-color);
+    box-shadow: 0px 3px var(--delResKeyShadow-color);
+}
+input[value="="]{
+    color: var(--igualKeyText-color);
+    font-size: 18px;
+    background-color: var(--igualKeyBack-color);
+    box-shadow: 0px 3px var(--igualKeyShadow-color)
+}
+footer{
+	margin-top: 80px;
+	background: #3D9970;
+	padding: 20px 0;
+}
+#pieDepagina{
+	overflow: hidden;
+}
+.nav {
+	float: left;
+}
+.nav li {
+	display: inline-block;
+	font-size: 0.8rem;
+	padding: 12px 0 0;
+}
+.nav li a {
+	color: #c0bcbc;
+	text-decoration: none;
+	padding-right: 1.5em;
+}
+.nav li a:hover {
+	text-decoration: underline;
+}
+.copyright {
+	float: right;
+	color: #c0bcbc;
+    padding-top: 8px;
+}
+/*Aplicar los siguientes estilos cuando  el tamaño del viewport sea igual o menor a 570px*/
+@media screen and (max-width:570px) {
+    #contenedorTitulo{
+        margin-top: 24px;
+        min-width: 326px;
+    }
+    #contenedorDisplay{
+        min-width: 326px;
+        min-height: 86px;
+    }
+    #resultado {
+        font-size: 34px;
+      }
+    #botonesAll{
+        min-width: 326px;
+        min-height: 420px;
+    }
+    .btn{
+        min-height: 65px;
+        min-width: 60px;
+    }
+    .btnLarge{
+        min-width: 138px;
+    }
+}

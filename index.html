@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <!--Estilos CSS-->
+  <link rel="stylesheet" href="css/estilos.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!--font-family: 'Manrope', sans-serif;
+      font-family: 'Spartan', sans-serif;-->
+</head>
+<body>
+  <!--Cabecera-->
+  <header>
+  </header>
+  <!--Cuerpo del documento-->
+  <section>
+    <div class="container">
+      <div id="contenedorPrincipal">
+        <div id="contenedorTitulo">
+          <p>calc</p>
+          <div id="contenedorSelector">
+            <div id="contenedorTheme">
+              <p id="tituloTheme">THEME</p>
+            </div>
+            <div class="contenedorFormulario">
+                <div id="selectorFormulario">
+                    <p class="selectorSkin">1</p>
+                    <p class="selectorSkin">2</p>
+                    <p class="selectorSkin">3</p>
+                </div>
+                <form action="" class="formulario2">
+                    <div id="backForm">
+                        <input type="radio" name="botonSkin" id="skin_1" value="1" checked>
+                        <label for="skin_1"></label>
+
+                        <input type="radio" name="botonSkin" id="skin_2" value="2">
+                        <label for="skin_2"></label>
+
+                        <input type="radio" name="botonSkin" id="skin_3" value="3">
+                        <label for="skin_3"></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div id="contenedorDisplay">
+          <span id="resultado">0</span>
+        </div>
+        <div id="botonesAll">
+          <div class="contenedorBotones">
+            <input type="button" class="btn" name="number" value="7">
+            <input type="button" class="btn" name="number" value="8">
+            <input type="button" class="btn" name="number" value="9">
+            <input type="button" class="btn" name="number" value="DEL">
+          </div>
+          <div class="contenedorBotones">
+            <input type="button" class="btn" name="number" value="4">
+            <input type="button" class="btn" name="number" value="5">
+            <input type="button" class="btn" name="number" value="6">
+            <input type="button" class="btn" name="number" value="+">
+          </div>
+          <div class="contenedorBotones">
+            <input type="button" class="btn" name="number" value="1">
+            <input type="button" class="btn" name="number" value="2">
+            <input type="button" class="btn" name="number" value="3">
+            <input type="button" class="btn" name="number" value="-">
+          </div>
+          <div class="contenedorBotones">
+            <input type="button" class="btn" name="number" value=".">
+            <input type="button" class="btn" name="number" value="0">
+            <input type="button" class="btn" name="number" value="/">
+            <input type="button" class="btn" name="number" value="x">
+          </div>
+          <div class="contenedorBotones">
+            <input type="button" class="btn btnLarge" name="number" value="RESET">
+            <input type="button" class="btn btnLarge" name="number" value="=">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="attribution">
+    <div id="pieDepagina" class="container">
+      <ul class="nav">
+          <li><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Challenge by</a></li>
+          <li><a href="https://www.linkedin.com/in/juan-ricardo-holguin" target="_blank">Coded by: Juan Ricardo Holguin</a></li>
+      </ul>
+      <div class="copyright">
+          <small>&copy derechos reservados</small>
+      </div>
+  </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
